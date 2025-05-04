@@ -3,10 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime
 from passlib.context import CryptContext
 
-# Khởi tạo Base class cho SQLAlchemy
 Base = declarative_base()
 
-# Hashing mật khẩu
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 class Task(Base):
