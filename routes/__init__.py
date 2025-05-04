@@ -7,15 +7,13 @@ from fastapi.security import OAuth2PasswordBearer
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
 import logging
-from fastapi import Body  # Thiếu dòng này!
-# Khởi tạo router
+from fastapi import Body  
+
 router = APIRouter()
 
-# Cấu hình logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Hàm phụ trợ để lấy phiên làm việc
 def get_db():
     db = SessionLocal()
     try:
@@ -23,8 +21,6 @@ def get_db():
     finally:
         db.close()
 
-# Cấu hình JWT
-# Đảm bảo các giá trị này ổn định
 SECRET_KEY = "your-256-bit-secret-key-keep-it-secure!"  # Phải giống nhau mọi lúc
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30  # Tăng thời gian hết hạn
