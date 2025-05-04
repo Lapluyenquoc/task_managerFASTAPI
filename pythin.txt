@@ -1,0 +1,37 @@
+************* Module task_manager.main
+task_manager\main.py:43:0: C0305: Trailing newlines (trailing-newlines)
+task_manager\main.py:4:0: E0401: Unable to import 'models' (import-error)
+task_manager\main.py:33:0: E0401: Unable to import 'routes' (import-error)
+task_manager\main.py:5:0: W0611: Unused OAuth2PasswordBearer imported from fastapi.security (unused-import)
+************* Module task_manager.routes.__init__
+task_manager\routes\__init__.py:74:0: C0301: Line too long (106/100) (line-too-long)
+task_manager\routes\__init__.py:92:0: C0303: Trailing whitespace (trailing-whitespace)
+task_manager\routes\__init__.py:212:0: C0303: Trailing whitespace (trailing-whitespace)
+task_manager\routes\__init__.py:217:0: C0303: Trailing whitespace (trailing-whitespace)
+task_manager\routes\__init__.py:221:0: C0304: Final newline missing (missing-final-newline)
+************* Module task_manager.routes
+task_manager\routes\__init__.py:3:0: E0401: Unable to import 'models' (import-error)
+task_manager\routes\__init__.py:4:0: E0401: Unable to import 'schemas' (import-error)
+task_manager\routes\__init__.py:5:0: E0401: Unable to import 'main' (import-error)
+task_manager\routes\__init__.py:47:8: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+task_manager\routes\__init__.py:48:8: W0707: Consider explicitly re-raising using 'raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Invalid token') from e' (raise-missing-from)
+task_manager\routes\__init__.py:57:8: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+task_manager\routes\__init__.py:61:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+task_manager\routes\__init__.py:65:8: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+task_manager\routes\__init__.py:66:8: W0707: Consider explicitly re-raising using 'raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Invalid token') from e' (raise-missing-from)
+task_manager\routes\__init__.py:151:0: W0404: Reimport 'logging' (imported line 9) (reimported)
+task_manager\routes\__init__.py:155:0: E0401: Unable to import 'models' (import-error)
+task_manager\routes\__init__.py:190:0: E0401: Unable to import 'routes' (import-error)
+task_manager\routes\__init__.py:207:18: W0621: Redefining name 'refresh_token' from outer scope (line 207) (redefined-outer-name)
+task_manager\routes\__init__.py:221:8: W0707: Consider explicitly re-raising using 'except JWTError as exc' and 'raise HTTPException(status_code=401, detail='Invalid refresh token') from exc' (raise-missing-from)
+************* Module task_manager.schemas.__init__
+task_manager\schemas\__init__.py:13:0: C0303: Trailing whitespace (trailing-whitespace)
+task_manager\schemas\__init__.py:25:0: C0303: Trailing whitespace (trailing-whitespace)
+task_manager\schemas\__init__.py:43:0: C0303: Trailing whitespace (trailing-whitespace)
+task_manager\schemas\__init__.py:56:0: C0304: Final newline missing (missing-final-newline)
+************* Module task_manager.schemas
+task_manager\schemas\__init__.py:1:0: E0611: No name 'BaseModel' in module 'pydantic' (no-name-in-module)
+
+------------------------------------------------------------------
+Your code has been rated at 7.17/10 (previous run: 7.17/10, +0.00)
+
